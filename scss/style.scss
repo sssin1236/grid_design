@@ -26,9 +26,24 @@ body{
 
         span{
             position: absolute;
-            top: 5px; left: 20px;
+            top: 10px; left: 20px;
             font: 13px/1 'arial';
             color: #222;
+        }
+
+        .utill{
+            position: absolute;
+            top: 5px; right: 20px;
+
+            li{
+                float: left;
+                margin-left: 10px;
+
+                a{
+                    font: 13px/1 'arial';
+                    color: #222;
+                }
+            }
         }
     }
 }
