@@ -9,4 +9,28 @@ ul, ol, li {
 a {
   text-decoration: none; }
 
+body {
+  width: 100%;
+  background: #eee; }
+  body #header {
+    width: 100%;
+    padding: 50px 20px; }
+    body #header h1 {
+      font: bold 60px/1 'arial';
+      color: #111;
+      text-align: right; }
+      body #header h1::after {
+        content: '';
+        display: block;
+        clear: both; }
+      body #header h1 strong {
+        float: left;
+        margin-right: 50px; }
+    body #header span {
+      position: absolute;
+      top: 5px;
+      left: 20px;
+      font: 13px/1 'arial';
+      color: #222; }
+
 /*# sourceMappingURL=style.css.map */
