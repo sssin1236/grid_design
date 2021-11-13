@@ -59,6 +59,11 @@ body{
             &::after{
                 content: ''; display: block; clear: both;
             }
+
+            .item-sizer{
+                width: 25%; height: 0px;
+                opacity: 0;
+            }
         }
     }
 }

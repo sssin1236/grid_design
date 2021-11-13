@@ -53,5 +53,9 @@ body {
         content: '';
         display: block;
         clear: both; }
+      body main #grid .item-sizer {
+        width: 25%;
+        height: 0px;
+        opacity: 0; }
 
 /*# sourceMappingURL=style.css.map */
