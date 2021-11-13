@@ -48,7 +48,8 @@ body {
     width: 100%;
     padding: 20px 100px; }
     body main #grid {
-      width: 100%; }
+      width: 100%;
+      border: 1px solid #111; }
       body main #grid::after {
         content: '';
         display: block;
@@ -57,5 +58,10 @@ body {
         width: 25%;
         height: 0px;
         opacity: 0; }
+      body main #grid .item {
+        width: 25%;
+        height: 30vh;
+        padding: 10px;
+        float: left; }
 
 /*# sourceMappingURL=style.css.map */
