@@ -48,4 +48,17 @@ body{
             }
         }
     }
+
+    main{
+        width: 100%;
+        padding: 20px 100px;
+
+        #grid{
+            width: 100%;
+
+            &::after{
+                content: ''; display: block; clear: both;
+            }
+        }
+    }
 }

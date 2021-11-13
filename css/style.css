@@ -44,5 +44,14 @@ body {
         body #header .utill li a {
           font: 13px/1 'arial';
           color: #222; }
+  body main {
+    width: 100%;
+    padding: 20px 100px; }
+    body main #grid {
+      width: 100%; }
+      body main #grid::after {
+        content: '';
+        display: block;
+        clear: both; }
 
 /*# sourceMappingURL=style.css.map */
