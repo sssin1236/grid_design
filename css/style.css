@@ -103,17 +103,18 @@ body {
         body main #grid .item:nth-of-type(4) {
           height: 15vh; }
         body main #grid .item:nth-of-type(5) {
-          height: 15vh; }
+          height: 45vh; }
         body main #grid .item:nth-of-type(6) {
           width: 25%; }
         body main #grid .item:nth-of-type(7) {
           width: 25%; }
         body main #grid .item:nth-of-type(8) {
-          width: 50%; }
+          width: 25%;
+          height: 60vh; }
         body main #grid .item:nth-of-type(9) {
           width: 50%; }
         body main #grid .item:nth-of-type(10) {
-          width: 50%; }
+          width: 25%; }
         body main #grid .item .inner {
           width: 100%;
           height: 100%; }
