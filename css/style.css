@@ -64,6 +64,7 @@ body {
         width: 25%;
         height: 30vh;
         padding: 0 10px 10px;
+        border: 1px solid #111;
         float: left; }
         body main #grid .item:nth-of-type(2) {
           width: 75%;
@@ -84,7 +85,6 @@ body {
           width: 50%; }
         body main #grid .item .inner {
           width: 100%;
-          height: 100%;
-          background: salmon; }
+          height: 100%; }
 
 /*# sourceMappingURL=style.css.map */
