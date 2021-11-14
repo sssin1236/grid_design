@@ -7,40 +7,67 @@ body{
 
     #header{
         width: 100%;
-        padding: 50px 100px 10px;
+        padding: 50px 4vw 10px;
+        position: relative;
+        text-align: center;
 
         h1{
-            font: 60px/1 'arial';
+            font: 80px/1 'arial';
             color: #111;
-            text-align: right;
-            margin-top: 30px;
+            text-align: center;
+            margin: 30px 0 15px;
+        }
 
-            &::after{
-                content: ''; display: block; clear: both;
+        >p{
+            width: 100%;
+            position: absolute;
+            top: 30px; left: 50%;
+            transform: translateX(-50%);
+            font: bold 13px/1 'arial';
+            color: #222;
+            text-align: center;
+
+            &::before{
+                content: '';
+                display: block;
+                width: 40%; height: 1px;
+                background: #111;
+                position: absolute;
+                top: 50%; left: 4vw;
             }
 
-            strong{
-                float: left;
-                margin-right: 50px;
-                font: 60px/1 'arial';
-                color: #111;
+            &::after{
+                content: '';
+                display: block;
+                width: 40%; height: 1px;
+                background: #111;
+                position: absolute;
+                top: 50%; right: 4vw;
             }
         }
 
         span{
-            position: absolute;
-            top: 10px; left: 100px;
             font: 13px/1 'arial';
             color: #222;
         }
 
         .utill{
-            position: absolute;
-            top: 5px; right: 100px;
+            width: 100%; 
+            margin-top: 20px;
+            text-align: left;
+
+            &::after{
+                content: ''; display: block; clear: both;
+            }
 
             li{
                 float: left;
-                margin-left: 10px;
+                width: calc(100% / 4);
+                padding-left: 20px;
+
+                &:nth-of-type(1){
+                    padding-left: 0;
+                }
 
                 a{
                     font: 13px/1 'arial';
@@ -53,7 +80,6 @@ body{
     main{
         width: 100%;
         padding: 0 4vw;
-        border-top: 1px solid #111;
 
         #grid{
             width: 100%;
