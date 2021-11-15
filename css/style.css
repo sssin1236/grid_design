@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=M+PLUS+1+Code:wght@300&family=Orbitron&family=Rajdhani:wght@300&family=Roboto+Condensed:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,14 +13,14 @@ a {
 
 body {
   width: 100%;
-  background: #eee; }
+  background: #f5ebde; }
   body #header {
     width: 100%;
-    padding: 50px 4vw 10px;
+    padding: 50px 4vw 0px;
     position: relative;
     text-align: center; }
     body #header h1 {
-      font: 80px/1 'arial';
+      font: bold 80px/1 'M PLUS 1 Code';
       color: #111;
       text-align: center;
       margin: 30px 0 15px; }
@@ -29,7 +30,7 @@ body {
       top: 30px;
       left: 50%;
       transform: translateX(-50%);
-      font: bold 13px/1 'arial';
+      font: bold 15px/1 'M PLUS 1 Code';
       color: #222;
       text-align: center; }
       body #header > p::before {
@@ -51,7 +52,7 @@ body {
         top: 50%;
         right: 4vw; }
     body #header span {
-      font: 13px/1 'arial';
+      font: 13px/1 'roboto';
       color: #222; }
     body #header .utill {
       width: 100%;
@@ -72,15 +73,16 @@ body {
           padding-left: 0;
           border-left: none; }
         body #header .utill li a {
-          font: bold 16px/1 'arial';
-          color: #222; }
+          font: bold 18px/1 'M PLUS 1 Code';
+          color: #222;
+          letter-spacing: 1px; }
         body #header .utill li p {
-          font: 15px/1 'arial';
+          font: 15px/1 'roboto';
           color: #333;
           margin-top: 8px; }
   body main {
     width: 100%;
-    padding: 0 4vw; }
+    padding: 0 15vw 50px; }
     body main #grid {
       width: 100%; }
       body main #grid::after {
@@ -88,35 +90,70 @@ body {
         display: block;
         clear: both; }
       body main #grid .item-sizer {
-        width: 25%;
+        width: 20%;
         height: 0px;
         opacity: 0; }
       body main #grid .item {
-        width: 25%;
-        height: 30vh;
-        padding: 0 10px 10px;
-        border: 1px solid #111;
+        width: 20%;
+        height: 40vh;
+        padding: 20px 40px;
+        border-bottom: 1px solid #111;
+        border-right: 1px solid #111;
         float: left; }
         body main #grid .item:nth-of-type(2) {
-          width: 75%;
+          width: 60%;
+          height: 100vh;
+          border-left: 1px solid #111; }
+        body main #grid .item:nth-of-type(3) {
+          width: 40%;
           height: 60vh; }
         body main #grid .item:nth-of-type(4) {
-          height: 15vh; }
+          width: 40%;
+          height: 20vh; }
         body main #grid .item:nth-of-type(5) {
-          height: 45vh; }
-        body main #grid .item:nth-of-type(6) {
-          width: 25%; }
-        body main #grid .item:nth-of-type(7) {
-          width: 25%; }
-        body main #grid .item:nth-of-type(8) {
-          width: 25%;
+          width: 40%;
           height: 60vh; }
+        body main #grid .item:nth-of-type(6) {
+          width: 20%;
+          border-left: 1px solid #111; }
+        body main #grid .item:nth-of-type(7) {
+          width: 20%; }
+        body main #grid .item:nth-of-type(8) {
+          width: 20%;
+          height: 20vh; }
         body main #grid .item:nth-of-type(9) {
-          width: 50%; }
+          width: 20%;
+          height: 60vh; }
         body main #grid .item:nth-of-type(10) {
-          width: 25%; }
+          width: 40%; }
+        body main #grid .item:nth-of-type(11) {
+          width: 40%;
+          border-left: 1px solid #111; }
         body main #grid .item .inner {
           width: 100%;
           height: 100%; }
+          body main #grid .item .inner::after {
+            content: '';
+            display: block;
+            clear: both; }
+          body main #grid .item .inner h1 {
+            display: inline-block;
+            font: bold 20px/1 'M PLUS 1 Code';
+            color: #111;
+            margin-bottom: 20px; }
+          body main #grid .item .inner span {
+            float: right;
+            font: bold 15px/1 'M PLUS 1 Code';
+            color: #333;
+            letter-spacing: -0.5px; }
+          body main #grid .item .inner .pic {
+            width: 100%;
+            height: 80%;
+            margin-bottom: 20px;
+            text-align: center; }
+            body main #grid .item .inner .pic img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
 
 /*# sourceMappingURL=style.css.map */
