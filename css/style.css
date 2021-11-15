@@ -16,7 +16,7 @@ body {
   background: #f0ede9; }
   body #header {
     width: 100%;
-    padding: 50px 4vw 0px;
+    padding: 50px 20vw 0px;
     position: relative;
     text-align: center; }
     body #header h1 {
@@ -224,19 +224,133 @@ body {
         body main #grid .item:nth-of-type(5) {
           width: 40%;
           height: 60vh; }
+          body main #grid .item:nth-of-type(5) .inner .wrap {
+            width: 100%;
+            height: 100%;
+            display: none;
+            transition: 1s; }
+            body main #grid .item:nth-of-type(5) .inner .wrap::after {
+              content: '';
+              display: block;
+              clear: both; }
+            body main #grid .item:nth-of-type(5) .inner .wrap.on {
+              display: block; }
+            body main #grid .item:nth-of-type(5) .inner .wrap h1 {
+              display: inline-block;
+              font: bold 15px/1 'M PLUS 1 Code';
+              color: #111;
+              margin-bottom: 20px; }
+            body main #grid .item:nth-of-type(5) .inner .wrap .pic {
+              width: 50%;
+              height: 90%; }
+              body main #grid .item:nth-of-type(5) .inner .wrap .pic img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; }
+            body main #grid .item:nth-of-type(5) .inner .wrap h2 {
+              width: 45%;
+              height: 90%;
+              margin-bottom: 0px;
+              border-bottom: none;
+              position: absolute;
+              top: 40px;
+              right: 0px; }
+              body main #grid .item:nth-of-type(5) .inner .wrap h2 span {
+                display: block;
+                margin-top: 30px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #111;
+                font: 12px/1 'roboto';
+                color: #333; }
+              body main #grid .item:nth-of-type(5) .inner .wrap h2 p {
+                font: bold 13px/1 'Rajdhani';
+                color: #222;
+                margin-top: 10px; }
+            body main #grid .item:nth-of-type(5) .inner .wrap .btn {
+              display: block;
+              width: 45%;
+              height: 25px;
+              margin-top: 20px;
+              position: absolute;
+              top: 90%;
+              right: 0; }
+              body main #grid .item:nth-of-type(5) .inner .wrap .btn::before {
+                content: '';
+                display: block;
+                width: 50%;
+                height: 1px;
+                background: #111;
+                position: absolute;
+                top: 13px;
+                right: 10px;
+                transition: 0.5s; }
+              body main #grid .item:nth-of-type(5) .inner .wrap .btn::after {
+                content: '';
+                display: block;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                border: 1px solid #111;
+                position: absolute;
+                top: 0;
+                right: 0px;
+                transition: 0.5s; }
+              body main #grid .item:nth-of-type(5) .inner .wrap .btn span {
+                font: bold 18px/25px 'M PLUS 1 Code';
+                color: #111; }
+                body main #grid .item:nth-of-type(5) .inner .wrap .btn span::before {
+                  content: '';
+                  display: block;
+                  width: 10px;
+                  height: 1px;
+                  background: #111;
+                  position: absolute;
+                  top: 13px;
+                  right: 10px;
+                  transform: rotate(30deg);
+                  transform-origin: right center;
+                  transition: 0.5s; }
+                body main #grid .item:nth-of-type(5) .inner .wrap .btn span::after {
+                  content: '';
+                  display: none;
+                  width: 10px;
+                  height: 1px;
+                  background: #111;
+                  position: absolute;
+                  top: 13px;
+                  right: 10px;
+                  transform: rotate(-30deg);
+                  transform-origin: right center; }
+              body main #grid .item:nth-of-type(5) .inner .wrap .btn:hover::before {
+                background: #111;
+                width: 10px;
+                right: 9px; }
+              body main #grid .item:nth-of-type(5) .inner .wrap .btn:hover::after {
+                border-color: #111; }
+              body main #grid .item:nth-of-type(5) .inner .wrap .btn:hover span::before {
+                transform-origin: center center;
+                transform: rotate(-90deg);
+                background: #111;
+                right: 9px; }
         body main #grid .item:nth-of-type(6) {
           width: 20%;
           border-left: 1px solid #111; }
-          body main #grid .item:nth-of-type(6) .inner span {
-            display: block;
-            width: 100%;
-            height: 30px;
-            margin: 150px auto;
-            background: #111;
-            backdrop-filter: blur(30px);
-            text-align: center;
-            font: 20px/30px 'M PLUS 1 Code';
-            color: #eee; }
+          body main #grid .item:nth-of-type(6) .inner {
+            overflow: hidden; }
+            body main #grid .item:nth-of-type(6) .inner span {
+              display: block;
+              width: 100%;
+              height: 30px;
+              margin: 150px auto;
+              background: #111;
+              backdrop-filter: blur(30px);
+              text-align: center;
+              font: 20px/30px 'M PLUS 1 Code';
+              color: #eee;
+              cursor: pointer;
+              transition: 0.5s; }
+              body main #grid .item:nth-of-type(6) .inner span:hover {
+                transform: scale(1.2); }
         body main #grid .item:nth-of-type(7) {
           width: 20%; }
           body main #grid .item:nth-of-type(7) .inner .pic {
@@ -249,6 +363,15 @@ body {
         body main #grid .item:nth-of-type(8) {
           width: 20%;
           height: 60vh; }
+          body main #grid .item:nth-of-type(8) .inner p {
+            width: 80%;
+            margin: 150px auto;
+            font: 13px/1.5 'arial';
+            color: #555;
+            text-align: center; }
+            body main #grid .item:nth-of-type(8) .inner p b {
+              font: bold 22px/2 'Rajdhani';
+              color: #000; }
         body main #grid .item:nth-of-type(9) {
           width: 40%; }
           body main #grid .item:nth-of-type(9) .inner p {
@@ -289,7 +412,8 @@ body {
               body main #grid .item:nth-of-type(10) .inner .wrap .pic img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover; }
+                object-fit: cover;
+                object-position: top; }
             body main #grid .item:nth-of-type(10) .inner .wrap h2 {
               width: 100%;
               padding: 10px 0;
@@ -385,6 +509,19 @@ body {
         body main #grid .item:nth-of-type(11) {
           width: 20%;
           height: 20vh; }
+          body main #grid .item:nth-of-type(11):hover {
+            background: tan; }
+            body main #grid .item:nth-of-type(11):hover .inner p {
+              color: tan;
+              background: #eee; }
+          body main #grid .item:nth-of-type(11) .inner p {
+            width: 100%;
+            height: 100%;
+            background: tan;
+            font: 100px/1 'arial';
+            color: tan;
+            text-align: center;
+            padding-top: 20px; }
         body main #grid .item .inner {
           width: 100%;
           height: 100%;
