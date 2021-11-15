@@ -230,26 +230,25 @@ body {
           body main #grid .item:nth-of-type(6) .inner span {
             display: block;
             width: 100%;
-            height: 100%;
-            margin: 0 auto;
-            padding: 10vh 0;
-            background: gray;
+            height: 30px;
+            margin: 150px auto;
+            background: #111;
             backdrop-filter: blur(30px);
             text-align: center;
-            font: bold 150px/1 'Kalam';
+            font: 20px/30px 'M PLUS 1 Code';
             color: #eee; }
         body main #grid .item:nth-of-type(7) {
           width: 20%; }
-        body main #grid .item:nth-of-type(8) {
-          width: 20%;
-          height: 60vh; }
-          body main #grid .item:nth-of-type(8) .inner .pic {
+          body main #grid .item:nth-of-type(7) .inner .pic {
             width: 100%;
             height: 100%; }
-            body main #grid .item:nth-of-type(8) .inner .pic img {
+            body main #grid .item:nth-of-type(7) .inner .pic img {
               width: 100%;
               height: 100%;
               object-fit: cover; }
+        body main #grid .item:nth-of-type(8) {
+          width: 20%;
+          height: 60vh; }
         body main #grid .item:nth-of-type(9) {
           width: 40%; }
           body main #grid .item:nth-of-type(9) .inner p {
@@ -267,6 +266,122 @@ body {
         body main #grid .item:nth-of-type(10) {
           width: 40%;
           border-left: 1px solid #111; }
+          body main #grid .item:nth-of-type(10) .inner .wrap {
+            width: 100%;
+            height: 100%;
+            display: none;
+            transition: 1s; }
+            body main #grid .item:nth-of-type(10) .inner .wrap.on {
+              display: block; }
+            body main #grid .item:nth-of-type(10) .inner .wrap h1 {
+              display: inline-block;
+              font: bold 15px/1 'M PLUS 1 Code';
+              color: #111;
+              margin-bottom: 20px; }
+            body main #grid .item:nth-of-type(10) .inner .wrap .pic {
+              width: 100%;
+              height: 80%;
+              margin-bottom: 0px;
+              position: absolute;
+              top: 40px;
+              left: 0;
+              z-index: 1; }
+              body main #grid .item:nth-of-type(10) .inner .wrap .pic img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; }
+            body main #grid .item:nth-of-type(10) .inner .wrap h2 {
+              width: 100%;
+              padding: 10px 0;
+              margin-bottom: 20px;
+              border-top: 1px solid #111;
+              border-bottom: 1px solid #111;
+              position: absolute;
+              top: 85%;
+              left: 0;
+              transform: translateY(-50%);
+              font: bold 24px/1 'M PLUS 1 Code';
+              color: #111;
+              letter-spacing: 1px;
+              backdrop-filter: blur(10px);
+              z-index: 2; }
+              body main #grid .item:nth-of-type(10) .inner .wrap h2 span {
+                font: 12px/1 'roboto';
+                color: #333; }
+            body main #grid .item:nth-of-type(10) .inner .wrap p {
+              font: bold 13px/1 'Rajdhani';
+              color: #222;
+              margin-bottom: 10px;
+              position: absolute;
+              top: 85%;
+              right: 0;
+              z-index: 2; }
+            body main #grid .item:nth-of-type(10) .inner .wrap .btn {
+              display: block;
+              width: 100%;
+              height: 25px;
+              margin-top: 30px;
+              position: absolute;
+              bottom: -10px;
+              left: 0; }
+              body main #grid .item:nth-of-type(10) .inner .wrap .btn::before {
+                content: '';
+                display: block;
+                width: 20%;
+                height: 1px;
+                background: #111;
+                position: absolute;
+                top: 13px;
+                right: 10px;
+                transition: 0.5s; }
+              body main #grid .item:nth-of-type(10) .inner .wrap .btn::after {
+                content: '';
+                display: block;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                border: 1px solid #111;
+                position: absolute;
+                top: 0;
+                right: 0px;
+                transition: 0.5s; }
+              body main #grid .item:nth-of-type(10) .inner .wrap .btn span {
+                font: bold 18px/25px 'M PLUS 1 Code';
+                color: #111; }
+                body main #grid .item:nth-of-type(10) .inner .wrap .btn span::before {
+                  content: '';
+                  display: block;
+                  width: 10px;
+                  height: 1px;
+                  background: #111;
+                  position: absolute;
+                  top: 13px;
+                  right: 10px;
+                  transform: rotate(30deg);
+                  transform-origin: right center;
+                  transition: 0.5s; }
+                body main #grid .item:nth-of-type(10) .inner .wrap .btn span::after {
+                  content: '';
+                  display: none;
+                  width: 10px;
+                  height: 1px;
+                  background: #111;
+                  position: absolute;
+                  top: 13px;
+                  right: 10px;
+                  transform: rotate(-30deg);
+                  transform-origin: right center; }
+              body main #grid .item:nth-of-type(10) .inner .wrap .btn:hover::before {
+                background: #111;
+                width: 10px;
+                right: 9px; }
+              body main #grid .item:nth-of-type(10) .inner .wrap .btn:hover::after {
+                border-color: #111; }
+              body main #grid .item:nth-of-type(10) .inner .wrap .btn:hover span::before {
+                transform-origin: center center;
+                transform: rotate(-90deg);
+                background: #111;
+                right: 9px; }
         body main #grid .item:nth-of-type(11) {
           width: 20%;
           height: 20vh; }
