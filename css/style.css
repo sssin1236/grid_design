@@ -13,7 +13,7 @@ a {
 
 body {
   width: 100%;
-  background: #f5ebde; }
+  background: #f0ede9; }
   body #header {
     width: 100%;
     padding: 50px 4vw 0px;
@@ -96,7 +96,7 @@ body {
       body main #grid .item {
         width: 20%;
         height: 40vh;
-        padding: 20px 40px;
+        padding: 20px;
         border-bottom: 1px solid #111;
         border-right: 1px solid #111;
         float: left; }
@@ -131,29 +131,63 @@ body {
           border-left: 1px solid #111; }
         body main #grid .item .inner {
           width: 100%;
-          height: 100%; }
+          height: 100%;
+          position: relative; }
+          body main #grid .item .inner #navi {
+            position: absolute;
+            top: -10px;
+            right: 0px; }
+            body main #grid .item .inner #navi li {
+              float: left;
+              margin-left: 5px;
+              cursor: pointer; }
+              body main #grid .item .inner #navi li a {
+                display: block;
+                width: 12px;
+                height: 12px;
+                margin: 0 auto;
+                border: 1px solid #111;
+                border-radius: 50%;
+                background: transparent;
+                transition: 0.5s; }
+              body main #grid .item .inner #navi li span {
+                display: inline-block;
+                font: 11px/1 'roboto';
+                color: #333;
+                opacity: 0;
+                transform: translateY(10px);
+                transition: 0.5s; }
+              body main #grid .item .inner #navi li:hover span {
+                opacity: 1;
+                transform: translateY(0px); }
+              body main #grid .item .inner #navi li.on a {
+                background: #111; }
+              body main #grid .item .inner #navi li.on span {
+                opacity: 1;
+                transform: translateY(0px); }
           body main #grid .item .inner::after {
             content: '';
             display: block;
             clear: both; }
-          body main #grid .item .inner h1 {
-            display: inline-block;
-            font: bold 20px/1 'M PLUS 1 Code';
-            color: #111;
-            margin-bottom: 20px; }
-          body main #grid .item .inner span {
-            float: right;
-            font: bold 15px/1 'M PLUS 1 Code';
-            color: #333;
-            letter-spacing: -0.5px; }
-          body main #grid .item .inner .pic {
+          body main #grid .item .inner .wrap {
             width: 100%;
-            height: 80%;
-            margin-bottom: 20px;
-            text-align: center; }
-            body main #grid .item .inner .pic img {
+            height: 100%;
+            display: none; }
+            body main #grid .item .inner .wrap.on {
+              display: block; }
+            body main #grid .item .inner .wrap h1 {
+              display: inline-block;
+              font: bold 15px/1 'M PLUS 1 Code';
+              color: #111;
+              margin-bottom: 30px; }
+            body main #grid .item .inner .wrap .pic {
               width: 100%;
-              height: 100%;
-              object-fit: cover; }
+              height: 80%;
+              margin-bottom: 20px;
+              text-align: center; }
+              body main #grid .item .inner .wrap .pic img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; }
 
 /*# sourceMappingURL=style.css.map */

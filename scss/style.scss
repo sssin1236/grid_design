@@ -6,7 +6,7 @@
 
 body{
     width: 100%;
-    background: rgb(245, 235, 222);
+    background: rgb(240, 237, 233);
 
     #header{
         width: 100%;
@@ -110,7 +110,7 @@ body{
 
             .item{
                 width: 20%; height: 40vh;
-                padding: 20px 40px;
+                padding: 20px;
                 border-bottom: 1px solid #111;
                 border-right: 1px solid #111;
                 float: left;
@@ -160,35 +160,89 @@ body{
 
                 .inner{
                     width: 100%; height: 100%;
+                    position: relative;
+
+                    #navi{
+                        position: absolute;
+                        top: -10px; right: 0px;
+
+                        li{
+                            float: left;
+                            margin-left: 5px;
+                            cursor: pointer;
+
+                            a{
+                                display: block;
+                                width: 12px; height: 12px;
+                                margin: 0 auto;
+                                border: 1px solid #111;
+                                border-radius: 50%;
+                                background: transparent;
+                                transition: 0.5s;
+                            }
+
+                            span{
+                                display: inline-block;
+                                font: 11px/1 'roboto';
+                                color: #333;
+                                opacity: 0;
+                                transform: translateY(10px);
+                                transition: 0.5s;
+                            }
+
+                            &:hover{
+                                span{
+                                    opacity: 1;
+                                    transform: translateY(0px);
+                                }
+                            }
+
+                            &.on{
+                                a{
+                                    background: #111;
+                                }
+
+                                span{
+                                    opacity: 1;
+                                    transform: translateY(0px);
+                                }
+                            }
+                        }
+                    }
 
                     &::after{
                         content: ''; display: block; clear: both;
                     }
 
-                    h1{
-                        display: inline-block;
-                        font: bold 20px/1 'M PLUS 1 Code';
-                        color: #111;
-                        margin-bottom: 20px;
-                    }
-                    
-                    span{
-                        float: right;
-                        font: bold 15px/1 'M PLUS 1 Code';
-                        color: #333;
-                        letter-spacing: -0.5px;
-                    }
+                    .wrap{
+                        width: 100%; height: 100%;
+                        display: none;
 
-                    .pic{
+                        &.on{
+                            display: block;
+                        }
+                        
+                        h1{
+                            display: inline-block;
+                            font: bold 15px/1 'M PLUS 1 Code';
+                            color: #111;
+                            margin-bottom: 30px;
+                        }
+
+                        .pic{
                         width: 100%; height: 80%;
                         margin-bottom: 20px;
                         text-align: center;
 
-                        img{
-                            width: 100%; height: 100%;
-                            object-fit: cover;
+                            img{
+                                width: 100%; height: 100%;
+                                object-fit: cover;
+                            }
                         }
                     }
+                    
+                    
+                    
                 }
             }
         }   
