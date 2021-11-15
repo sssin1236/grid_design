@@ -230,27 +230,6 @@ body{
                                         transform-origin: right center;
                                     }
                                 }
-    
-                                &:hover{
-                                    &::before{
-                                        background: #111;
-                                        width: 10px;
-                                        right: 9px;
-                                    }
-        
-                                    &::after{
-                                        border-color: #111;
-                                    }
-        
-                                    span{
-                                        &::before{
-                                            transform-origin: center center;
-                                            transform: rotate(-90deg);
-                                            background: #111;
-                                            right: 9px;
-                                        }
-                                    }
-                                }
                             }
                         }
                     }
@@ -294,6 +273,20 @@ body{
                 &:nth-of-type(6){
                     width: 20%;
                     border-left: 1px solid #111;
+
+                    .inner{
+                        span{
+                            display: block;
+                            width: 100%; height: 100%;
+                            margin: 0 auto;
+                            padding: 10vh 0;
+                            background: gray;
+                            backdrop-filter: blur(30px);
+                            text-align: center;
+                            font: bold 150px/1 'Kalam';
+                            color: #eee;
+                        }
+                    }
                 }
 
                 &:nth-of-type(7){
@@ -301,20 +294,48 @@ body{
                 }
     
                 &:nth-of-type(8){
-                    width: 20%; height: 20vh;
+                    width: 20%; height: 60vh;
+
+                    .inner{
+                        .pic{
+                            width: 100%; height: 100%;
+
+                            img{
+                                width: 100%; height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
                 }
                 
                 &:nth-of-type(9){
-                    width: 20%; height: 60vh;
+                    width: 40%;
+
+                    .inner{
+                        p{
+                            width: 100%; height: 100%;
+                            font: 75px/1 'M PLUS 1 Code';
+                            color: #333;
+                            text-align: right;
+                            letter-spacing: 10px;
+                            border-top: 2px solid #111;
+                            border-bottom: 2px solid #111;
+
+                            b{
+                                font: bold 90px/1 'M PLUS 1 Code';
+                                color: #111;
+                            }
+                        }
+                    }
                 }
 
                 &:nth-of-type(10){
                     width: 40%;
+                    border-left: 1px solid #111;
                 }
 
                 &:nth-of-type(11){
-                    width: 40%;
-                    border-left: 1px solid #111;
+                    width: 20%; height: 20vh;
                 }
 
                 .inner{
