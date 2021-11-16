@@ -203,7 +203,8 @@ body {
                   transform-origin: right center; }
         body main #grid .item:nth-of-type(4) {
           width: 40%;
-          height: 20vh; }
+          height: 20vh;
+          border-right: none; }
           body main #grid .item:nth-of-type(4) .inner {
             text-align: right; }
             body main #grid .item:nth-of-type(4) .inner h1 {
@@ -333,8 +334,7 @@ body {
                 background: #111;
                 right: 9px; }
         body main #grid .item:nth-of-type(6) {
-          width: 20%;
-          border-left: 1px solid #111; }
+          width: 20%; }
           body main #grid .item:nth-of-type(6) .inner {
             overflow: hidden; }
             body main #grid .item:nth-of-type(6) .inner span {
@@ -373,7 +373,8 @@ body {
               font: bold 22px/2 'Rajdhani';
               color: #000; }
         body main #grid .item:nth-of-type(9) {
-          width: 40%; }
+          width: 40%;
+          border-right: none; }
           body main #grid .item:nth-of-type(9) .inner p {
             width: 100%;
             height: 100%;
@@ -918,8 +919,7 @@ body {
               background: #111;
               right: 9px; }
       body main #grid .item:nth-of-type(6) {
-        width: 40%;
-        border-left: 1px solid #111; }
+        width: 40%; }
         body main #grid .item:nth-of-type(6) .inner {
           overflow: hidden; }
           body main #grid .item:nth-of-type(6) .inner span {
@@ -957,10 +957,11 @@ body {
           color: #555;
           text-align: center; }
           body main #grid .item:nth-of-type(8) .inner p b {
-            font: bold 3vw/1.2 'Rajdhani';
+            font: bold 3vw/1.1 'Rajdhani';
             color: #000; }
       body main #grid .item:nth-of-type(9) {
-        width: 40%; }
+        width: 40%;
+        border-right: 1px solid #111; }
         body main #grid .item:nth-of-type(9) .inner p {
           width: 100%;
           height: 100%;
@@ -971,7 +972,7 @@ body {
           border-top: 2px solid #111;
           border-bottom: 2px solid #111; }
           body main #grid .item:nth-of-type(9) .inner p b {
-            font: bold 10vw/1 'M PLUS 1 Code';
+            font: bold 8vw/1 'M PLUS 1 Code';
             color: #111;
             letter-spacing: 13px; }
       body main #grid .item:nth-of-type(10) {
@@ -1107,10 +1108,10 @@ body {
           width: 100%;
           height: 100%;
           background: tan;
-          font: 15vw/1 'arial';
+          font: 13vw/1 'arial';
           color: tan;
           text-align: center;
-          padding-top: 40px; }
+          padding-top: 10px; }
       body main #grid .item .inner {
         width: 100%;
         height: 100%;
