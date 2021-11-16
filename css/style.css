@@ -664,6 +664,16 @@ body {
                 background: #111;
                 right: 9px; }
 
+@media screen and (max-width: 1640px) {
+  body #header {
+    padding: 50px 10vw 0px; }
+  body main {
+    padding: 0 10vw 50px; } }
+@media screen and (max-width: 1354px) {
+  body #header {
+    padding: 50px 5vw 0px; }
+  body main {
+    padding: 0 5vw 50px; } }
 @media screen and (max-width: 1199px) {
   body #header {
     padding: 50px 4vw 0px; }
@@ -686,6 +696,8 @@ body {
       body main #grid .item:nth-of-type(3) {
         width: 40%;
         height: 60vh; }
+        body main #grid .item:nth-of-type(3) .inner #navi li {
+          margin-left: 0px; }
         body main #grid .item:nth-of-type(3) .inner .wrap {
           width: 100%;
           height: 100%;
@@ -786,24 +798,17 @@ body {
         height: 20vh; }
         body main #grid .item:nth-of-type(4) .inner {
           text-align: right; }
-          body main #grid .item:nth-of-type(4) .inner h1 {
-            font: bold 60px/1 'M PLUS 1 Code';
-            color: #111;
-            margin-bottom: 10px; }
           body main #grid .item:nth-of-type(4) .inner span {
-            font: 20px/1 'M PLUS 1 Code';
+            font: 15px/1 'M PLUS 1 Code';
             color: #fff;
             background: #111;
             padding: 0 5px; }
           body main #grid .item:nth-of-type(4) .inner p {
-            width: 80%;
-            font: 15px/1.2 'arial';
-            color: #555;
-            margin-top: 20px;
-            margin-left: 20%; }
+            display: none; }
       body main #grid .item:nth-of-type(5) {
-        width: 40%;
-        height: 60vh; }
+        width: 80%;
+        height: 40vh;
+        border-left: 1px solid #111; }
         body main #grid .item:nth-of-type(5) .inner .wrap {
           width: 100%;
           height: 100%;
@@ -913,7 +918,7 @@ body {
               background: #111;
               right: 9px; }
       body main #grid .item:nth-of-type(6) {
-        width: 20%;
+        width: 40%;
         border-left: 1px solid #111; }
         body main #grid .item:nth-of-type(6) .inner {
           overflow: hidden; }
@@ -932,7 +937,8 @@ body {
             body main #grid .item:nth-of-type(6) .inner span:hover {
               transform: scale(1.2); }
       body main #grid .item:nth-of-type(7) {
-        width: 20%; }
+        width: 20%;
+        padding: 0; }
         body main #grid .item:nth-of-type(7) .inner .pic {
           width: 100%;
           height: 100%; }
@@ -942,32 +948,33 @@ body {
             object-fit: cover; }
       body main #grid .item:nth-of-type(8) {
         width: 20%;
-        height: 60vh; }
+        height: 60vh;
+        padding: 0 5px; }
         body main #grid .item:nth-of-type(8) .inner p {
-          width: 80%;
-          margin: 150px auto;
+          width: 100%;
+          margin: 120px auto;
           font: 13px/1.5 'arial';
           color: #555;
           text-align: center; }
           body main #grid .item:nth-of-type(8) .inner p b {
-            font: bold 22px/2 'Rajdhani';
+            font: bold 3vw/1.2 'Rajdhani';
             color: #000; }
       body main #grid .item:nth-of-type(9) {
         width: 40%; }
         body main #grid .item:nth-of-type(9) .inner p {
           width: 100%;
           height: 100%;
-          font: 75px/1 'M PLUS 1 Code';
+          font: 8vw/1 'M PLUS 1 Code';
           color: #333;
           text-align: right;
-          letter-spacing: 10px;
+          letter-spacing: 3px;
           border-top: 2px solid #111;
           border-bottom: 2px solid #111; }
           body main #grid .item:nth-of-type(9) .inner p b {
-            font: bold 90px/1 'M PLUS 1 Code';
+            font: bold 13vw/1 'M PLUS 1 Code';
             color: #111; }
       body main #grid .item:nth-of-type(10) {
-        width: 40%;
+        width: 80%;
         border-left: 1px solid #111; }
         body main #grid .item:nth-of-type(10) .inner .wrap {
           width: 100%;
@@ -1088,7 +1095,8 @@ body {
               right: 9px; }
       body main #grid .item:nth-of-type(11) {
         width: 20%;
-        height: 20vh; }
+        height: 20vh;
+        padding: 10px; }
         body main #grid .item:nth-of-type(11):hover {
           background: tan; }
           body main #grid .item:nth-of-type(11):hover .inner p {
@@ -1098,10 +1106,10 @@ body {
           width: 100%;
           height: 100%;
           background: tan;
-          font: 100px/1 'arial';
+          font: 15vw/1 'arial';
           color: tan;
           text-align: center;
-          padding-top: 20px; }
+          padding-top: 40px; }
       body main #grid .item .inner {
         width: 100%;
         height: 100%;
