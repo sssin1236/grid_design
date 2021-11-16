@@ -844,3 +844,719 @@ body{
     }
     
 }
+
+
+
+
+@media screen and (max-width: 1199px){
+    body{
+    
+        #header{
+            padding: 50px 4vw 0px;
+    
+            >p{
+    
+                &::before{
+                    width: 30%;
+                }
+    
+                &::after{
+                    width: 30%;
+                }
+            }
+        }
+        
+        main{
+            padding: 0 4vw 50px;
+    
+            #grid{
+    
+                .item{
+                    width: 20%; height: 40vh;
+                    padding: 20px;
+                    border-bottom: 1px solid #111;
+                    border-right: 1px solid #111;
+                    float: left;
+    
+                    &:nth-of-type(2){
+                        width: 60%; height: 80vh;
+                    }
+    
+                    &:nth-of-type(3){
+                        width: 40%; height: 60vh;
+    
+                        .inner{
+                            .wrap{
+                                width: 100%; height: 100%;
+                                display: none;
+                                transition: 1s;
+        
+                                &.on{
+                                    display: block;
+                                }
+                                
+                                h1{
+                                    display: inline-block;
+                                    font: bold 15px/1 'M PLUS 1 Code';
+                                    color: #111;
+                                    margin-bottom: 20px;
+                                }
+        
+                                .pic{
+                                width: 100%; height: 70%;
+                                margin-bottom: 0px;
+                                text-align: center;
+        
+                                    img{
+                                        width: 100%; height: 100%;
+                                        object-fit: cover;
+                                    }
+                                }
+        
+                                h2{
+                                    width: 100%;
+                                    padding: 10px 0;
+                                    margin-bottom: 0px;
+                                    font: bold 24px/1 'M PLUS 1 Code';
+                                    color: #111;
+                                    letter-spacing: 1px;
+                                    border-top: 1px solid #111;
+                                    border-bottom: none;
+        
+                                    span{
+                                        display: block;
+                                        margin-top: 5px;
+                                        font: 12px/1 'roboto';
+                                        color: #333;
+                                    }
+                                }
+        
+                                p{
+                                    width: 100%;
+                                    font: bold 13px/1 'Rajdhani';
+                                    color: #222;
+                                    border-bottom: none;
+                                    margin-bottom: 40px;
+                                    padding-bottom: 10px;
+                                }
+                                
+                                .btn{
+                                    position: absolute;
+                                    top: 95px; right: 0;
+                                    width: 100%; height: 25px;
+            
+                                    &::before{
+                                        content: '';
+                                        display: block;
+                                        width: 60%; height: 1px;
+                                        background: #111;
+                                        position: absolute;
+                                        top: 13px; right: 10px;
+                                        transition: 0.5s;
+                                    }
+            
+                                    &::after{
+                                        content: '';
+                                        display: block;
+                                        width: 25px; height: 25px;
+                                        border-radius: 50%;
+                                        border: 1px solid #111;
+                                        position: absolute;
+                                        top: 0; right: 0px;
+                                        transition: 0.5s;
+                                    }
+            
+                                    span{
+                                        font: bold 18px/25px 'M PLUS 1 Code';
+                                        color: #111;
+            
+                                        &::before{
+                                            content: '';
+                                            display: block;
+                                            width: 10px; height: 1px;
+                                            background: #111;
+                                            position: absolute;
+                                            top: 13px; right: 10px;
+                                            transform: rotate(30deg);
+                                            transform-origin: right center;
+                                            transition: 0.5s;
+                                        }
+            
+                                        &::after{
+                                            content: '';
+                                            display: none;
+                                            width: 10px; height: 1px;
+                                            background: #111;
+                                            position: absolute;
+                                            top: 13px; right: 10px;
+                                            transform: rotate(-30deg);
+                                            transform-origin: right center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    &:nth-of-type(4){
+                        width: 40%; height: 20vh;
+    
+                        .inner{
+                            text-align: right;
+    
+                            h1{
+                                font: bold 60px/1 'M PLUS 1 Code';
+                                color: #111;
+                                // border-bottom: 2px solid #111;
+                                // padding-bottom: 10px;
+                                margin-bottom: 10px;
+                            }
+    
+                            span{
+                                font: 20px/1 'M PLUS 1 Code';
+                                color: #fff;
+                                background: #111;
+                                padding: 0 5px;
+                            }
+    
+                            p{
+                                width: 80%;
+                                font: 15px/1.2 'arial';
+                                color: #555;
+                                margin-top: 20px;
+                                margin-left: 20%;
+                            }
+                        }
+                    }
+    
+                    &:nth-of-type(5){
+                        width: 40%; height: 60vh;
+    
+                        .inner{
+                            .wrap{
+                                width: 100%; height: 100%;
+                                display: none;
+                                transition: 1s;
+    
+                                &::after{
+                                    content: ''; display: block; clear: both;
+                                }
+        
+                                &.on{
+                                    display: block;
+                                }
+                                
+                                h1{
+                                    display: inline-block;
+                                    font: bold 15px/1 'M PLUS 1 Code';
+                                    color: #111;
+                                    margin-bottom: 20px;
+                                }
+        
+                                .pic{
+                                    width: 50%; height: 90%;
+            
+                                        img{
+                                            width: 100%; height: 100%;
+                                            object-fit: cover;
+                                        }
+                                }
+        
+                                h2{
+                                    width: 45%; height: 90%;
+                                    margin-bottom: 0px;
+                                    border-bottom: none;
+                                    position: absolute;
+                                    top: 40px; right: 0px;
+        
+                                    span{
+                                        display: block;
+                                        margin-top: 30px;
+                                        padding-bottom: 10px;
+                                        border-bottom: 1px solid #111;
+                                        font: 12px/1 'roboto';
+                                        color: #333;
+                                    }
+                                    
+                                    p{
+                                        font: bold 13px/1 'Rajdhani';
+                                        color: #222;
+                                        margin-top: 10px;
+                                    }
+                                }
+        
+                                
+                                
+                                .btn{
+                                    display: block;
+                                    width: 45%; height: 25px;
+                                    margin-top: 20px;
+                                    position: absolute;
+                                    top: 90%; right: 0;
+            
+                                    &::before{
+                                        content: '';
+                                        display: block;
+                                        width: 50%; height: 1px;
+                                        background: #111;
+                                        position: absolute;
+                                        top: 13px; right: 10px;
+                                        transition: 0.5s;
+                                    }
+            
+                                    &::after{
+                                        content: '';
+                                        display: block;
+                                        width: 25px; height: 25px;
+                                        border-radius: 50%;
+                                        border: 1px solid #111;
+                                        position: absolute;
+                                        top: 0; right: 0px;
+                                        transition: 0.5s;
+                                    }
+            
+                                    span{
+                                        font: bold 18px/25px 'M PLUS 1 Code';
+                                        color: #111;
+            
+                                        &::before{
+                                            content: '';
+                                            display: block;
+                                            width: 10px; height: 1px;
+                                            background: #111;
+                                            position: absolute;
+                                            top: 13px; right: 10px;
+                                            transform: rotate(30deg);
+                                            transform-origin: right center;
+                                            transition: 0.5s;
+                                        }
+            
+                                        &::after{
+                                            content: '';
+                                            display: none;
+                                            width: 10px; height: 1px;
+                                            background: #111;
+                                            position: absolute;
+                                            top: 13px; right: 10px;
+                                            transform: rotate(-30deg);
+                                            transform-origin: right center;
+                                        }
+                                    }
+        
+                                    &:hover{
+                                        &::before{
+                                            background: #111;
+                                            width: 10px;
+                                            right: 9px;
+                                        }
+            
+                                        &::after{
+                                            border-color: #111;
+                                        }
+            
+                                        span{
+                                            &::before{
+                                                transform-origin: center center;
+                                                transform: rotate(-90deg);
+                                                background: #111;
+                                                right: 9px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    &:nth-of-type(6){
+                        width: 20%;
+                        border-left: 1px solid #111;
+    
+                        .inner{
+                            overflow: hidden;
+    
+                            span{
+                                display: block;
+                                width: 100%; height: 30px;
+                                margin: 150px auto;
+                                background: #111;
+                                backdrop-filter: blur(30px);
+                                text-align: center;
+                                font: 20px/30px 'M PLUS 1 Code';
+                                color: #eee;
+                                cursor: pointer;
+                                transition: 0.5s;
+    
+                                &:hover{
+                                    transform: scale(1.2);
+                                }
+                            }
+                        }
+                    }
+    
+                    &:nth-of-type(7){
+                        width: 20%;
+    
+                        .inner{
+                            .pic{
+                                width: 100%; height: 100%;
+    
+                                img{
+                                    width: 100%; height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                    }
+        
+                    &:nth-of-type(8){
+                        width: 20%; height: 60vh;
+    
+                        .inner{
+                            p{
+                                width: 80%;
+                                margin: 150px auto;
+                                font: 13px/1.5 'arial';
+                                color: #555;
+                                text-align: center;
+    
+                                b{
+                                    font: bold 22px/2 'Rajdhani';
+                                    color: #000;
+                                }
+                            }
+                        }
+                    }
+                    
+                    &:nth-of-type(9){
+                        width: 40%;
+    
+                        .inner{
+                            p{
+                                width: 100%; height: 100%;
+                                font: 75px/1 'M PLUS 1 Code';
+                                color: #333;
+                                text-align: right;
+                                letter-spacing: 10px;
+                                border-top: 2px solid #111;
+                                border-bottom: 2px solid #111;
+    
+                                b{
+                                    font: bold 90px/1 'M PLUS 1 Code';
+                                    color: #111;
+                                }
+                            }
+                        }
+                    }
+    
+                    &:nth-of-type(10){
+                        width: 40%;
+                        border-left: 1px solid #111;
+    
+                        .inner{
+                            .wrap{
+                                width: 100%; height: 100%;
+                                display: none;
+                                transition: 1s;
+        
+                                &.on{
+                                    display: block;
+                                }
+                                
+                                h1{
+                                    display: inline-block;
+                                    font: bold 15px/1 'M PLUS 1 Code';
+                                    color: #111;
+                                    margin-bottom: 20px;
+                                }
+        
+                                .pic{
+                                    width: 100%; height: 80%;
+                                    margin-bottom: 0px;
+                                    position: absolute;
+                                    top: 40px; left: 0;
+                                    z-index: 1;
+            
+                                        img{
+                                            width: 100%; height: 100%;
+                                            object-fit: cover;
+                                            object-position: top;
+                                        }
+                                }
+        
+                                h2{
+                                    width: 100%;
+                                    padding: 10px 0;
+                                    margin-bottom: 20px;
+                                    border-top: 1px solid #111;
+                                    border-bottom: 1px solid #111;
+                                    position: absolute;
+                                    top: 85%; left: 0;
+                                    transform: translateY(-50%);
+                                    font: bold 24px/1 'M PLUS 1 Code';
+                                    color: #111;
+                                    letter-spacing: 1px;
+                                    backdrop-filter: blur(10px);
+                                    z-index: 2;
+        
+                                    span{
+                                        font: 12px/1 'roboto';
+                                        color: #333;
+                                    }
+                                }
+        
+                                p{
+                                    font: bold 13px/1 'Rajdhani';
+                                    color: #222;
+                                    margin-bottom: 10px;
+                                    position: absolute;
+                                    top: 85%; right: 0;
+                                    z-index: 2;
+                                }
+                                
+                                .btn{
+                                    display: block;
+                                    width: 100%; height: 25px;
+                                    margin-top: 30px;
+                                    position: absolute;
+                                    bottom: -10px; left: 0;
+            
+                                    &::before{
+                                        content: '';
+                                        display: block;
+                                        width: 20%; height: 1px;
+                                        background: #111;
+                                        position: absolute;
+                                        top: 13px; right: 10px;
+                                        transition: 0.5s;
+                                    }
+            
+                                    &::after{
+                                        content: '';
+                                        display: block;
+                                        width: 25px; height: 25px;
+                                        border-radius: 50%;
+                                        border: 1px solid #111;
+                                        position: absolute;
+                                        top: 0; right: 0px;
+                                        transition: 0.5s;
+                                    }
+            
+                                    span{
+                                        font: bold 18px/25px 'M PLUS 1 Code';
+                                        color: #111;
+            
+                                        &::before{
+                                            content: '';
+                                            display: block;
+                                            width: 10px; height: 1px;
+                                            background: #111;
+                                            position: absolute;
+                                            top: 13px; right: 10px;
+                                            transform: rotate(30deg);
+                                            transform-origin: right center;
+                                            transition: 0.5s;
+                                        }
+            
+                                        &::after{
+                                            content: '';
+                                            display: none;
+                                            width: 10px; height: 1px;
+                                            background: #111;
+                                            position: absolute;
+                                            top: 13px; right: 10px;
+                                            transform: rotate(-30deg);
+                                            transform-origin: right center;
+                                        }
+                                    }
+        
+                                    &:hover{
+                                        &::before{
+                                            background: #111;
+                                            width: 10px;
+                                            right: 9px;
+                                        }
+            
+                                        &::after{
+                                            border-color: #111;
+                                        }
+            
+                                        span{
+                                            &::before{
+                                                transform-origin: center center;
+                                                transform: rotate(-90deg);
+                                                background: #111;
+                                                right: 9px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    &:nth-of-type(11){
+                        width: 20%; height: 20vh;
+    
+                        &:hover{
+                            background: tan;
+    
+                            .inner p{
+                                color: tan;
+                                background: #eee;
+                            }
+                        }
+    
+                        .inner{
+                            p{
+                                width: 100%; height: 100%;
+                                background: tan;
+                                font: 100px/1 'arial';
+                                color: tan;
+                                text-align: center;
+                                padding-top: 20px;
+                            }
+                        }
+                    }
+    
+                    .inner{
+                        width: 100%; height: 100%;
+                        position: relative;
+    
+                        &::after{
+                            content: ''; display: block; clear: both;
+                        }
+    
+                        .wrap{
+                            width: 100%; height: 100%;
+                            display: none;
+                            transition: 1s;
+    
+                            &.on{
+                                display: block;
+                            }
+                            
+                            h1{
+                                display: inline-block;
+                                font: bold 15px/1 'M PLUS 1 Code';
+                                color: #111;
+                                margin-bottom: 20px;
+                            }
+    
+                            .pic{
+                            width: 100%; height: 75%;
+                            margin-bottom: 20px;
+                            text-align: center;
+    
+                                img{
+                                    width: 100%; height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+    
+                            h2{
+                                width: 100%;
+                                padding: 10px 0;
+                                margin-bottom: 10px;
+                                font: bold 24px/1 'M PLUS 1 Code';
+                                color: #111;
+                                letter-spacing: 1px;
+                                border-top: 1px solid #111;
+                                border-bottom: 1px solid #111;
+    
+                                span{
+                                    font: 12px/1 'roboto';
+                                    color: #333;
+                                }
+                            }
+    
+                            p{
+                                font: bold 13px/1 'Rajdhani';
+                                color: #222;
+                                margin-bottom: 10px;
+                            }
+                            
+                            .btn{
+                                display: block;
+                                width: 100%; height: 25px;
+                                margin-top: 30px;
+                                position: relative;
+        
+                                &::before{
+                                    content: '';
+                                    display: block;
+                                    width: 20%; height: 1px;
+                                    background: #111;
+                                    position: absolute;
+                                    top: 13px; right: 10px;
+                                    transition: 0.5s;
+                                }
+        
+                                &::after{
+                                    content: '';
+                                    display: block;
+                                    width: 25px; height: 25px;
+                                    border-radius: 50%;
+                                    border: 1px solid #111;
+                                    position: absolute;
+                                    top: 0; right: 0px;
+                                    transition: 0.5s;
+                                }
+        
+                                span{
+                                    font: bold 18px/25px 'M PLUS 1 Code';
+                                    color: #111;
+        
+                                    &::before{
+                                        content: '';
+                                        display: block;
+                                        width: 10px; height: 1px;
+                                        background: #111;
+                                        position: absolute;
+                                        top: 13px; right: 10px;
+                                        transform: rotate(30deg);
+                                        transform-origin: right center;
+                                        transition: 0.5s;
+                                    }
+        
+                                    &::after{
+                                        content: '';
+                                        display: none;
+                                        width: 10px; height: 1px;
+                                        background: #111;
+                                        position: absolute;
+                                        top: 13px; right: 10px;
+                                        transform: rotate(-30deg);
+                                        transform-origin: right center;
+                                    }
+                                }
+    
+                                &:hover{
+                                    &::before{
+                                        background: #111;
+                                        width: 10px;
+                                        right: 9px;
+                                    }
+        
+                                    &::after{
+                                        border-color: #111;
+                                    }
+        
+                                    span{
+                                        &::before{
+                                            transform-origin: center center;
+                                            transform: rotate(-90deg);
+                                            background: #111;
+                                            right: 9px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }   
+        }
+        
+    }
+}
