@@ -116,11 +116,32 @@ body{
                 float: left;
 
                 &:nth-of-type(2){
+                    width: 40%; height: 10vh;
+                }
+
+                &:nth-of-type(3){
+                    width: 40%; height: 20vh;
+                }
+
+                &:nth-of-type(4){
+                    height: 20vh;
+                    border-right: none; 
+                }
+
+                &:nth-of-type(5){
+                    height: 10vh;
+                }
+
+                &:nth-of-type(6){
+                    height: 10vh;
+                }
+
+                &:nth-of-type(7){
                     width: 60%; height: 100vh;
                     border-left: 1px solid #111;
                 }
 
-                &:nth-of-type(3){
+                &:nth-of-type(8){
                     width: 40%; height: 60vh;
 
                     .inner{
@@ -235,7 +256,7 @@ body{
                     }
                 }
 
-                &:nth-of-type(4){
+                &:nth-of-type(9){
                     width: 40%; height: 20vh;
                     border-right: none;
 
@@ -265,7 +286,7 @@ body{
                     }
                 }
 
-                &:nth-of-type(5){
+                &:nth-of-type(10){
                     width: 40%; height: 60vh;
 
                     .inner{
@@ -404,7 +425,7 @@ body{
                     }
                 }
 
-                &:nth-of-type(6){
+                &:nth-of-type(11){
                     width: 20%;
 
                     .inner{
@@ -429,7 +450,7 @@ body{
                     }
                 }
 
-                &:nth-of-type(7){
+                &:nth-of-type(12){
                     width: 20%;
 
                     .inner{
@@ -444,7 +465,7 @@ body{
                     }
                 }
     
-                &:nth-of-type(8){
+                &:nth-of-type(13){
                     width: 20%; height: 60vh;
 
                     .inner{
@@ -463,7 +484,7 @@ body{
                     }
                 }
                 
-                &:nth-of-type(9){
+                &:nth-of-type(14){
                     width: 40%;
                     border-right: none;
 
@@ -485,7 +506,7 @@ body{
                     }
                 }
 
-                &:nth-of-type(10){
+                &:nth-of-type(15){
                     width: 40%;
                     border-left: 1px solid #111;
 
@@ -631,7 +652,7 @@ body{
                     }
                 }
 
-                &:nth-of-type(11){
+                &:nth-of-type(16){
                     width: 20%; height: 20vh;
 
                     &:hover{
@@ -714,7 +735,7 @@ body{
                     .wrap{
                         width: 100%; height: 100%;
                         display: none;
-                        transition: 1s;
+                        transition: 2s;
 
                         &.on{
                             display: block;
@@ -905,11 +926,11 @@ body{
                     border-right: 1px solid #111;
                     float: left;
     
-                    &:nth-of-type(2){
+                    &:nth-of-type(7){
                         width: 60%; height: 80vh;
                     }
     
-                    &:nth-of-type(3){
+                    &:nth-of-type(8){
                         width: 40%; height: 60vh;
     
                         .inner{
@@ -1032,7 +1053,7 @@ body{
                         }
                     }
     
-                    &:nth-of-type(4){
+                    &:nth-of-type(9){
                         width: 40%; height: 20vh;
     
                         .inner{
@@ -1051,7 +1072,7 @@ body{
                         }
                     }
     
-                    &:nth-of-type(5){
+                    &:nth-of-type(10){
                         width: 80%; height: 40vh;
                         border-left: 1px solid #111;
     
@@ -1191,7 +1212,7 @@ body{
                         }
                     }
     
-                    &:nth-of-type(6){
+                    &:nth-of-type(11){
                         width: 40%;
     
                         .inner{
@@ -1216,7 +1237,7 @@ body{
                         }
                     }
     
-                    &:nth-of-type(7){
+                    &:nth-of-type(12){
                         width: 20%;
                         padding: 0;
     
@@ -1232,7 +1253,7 @@ body{
                         }
                     }
         
-                    &:nth-of-type(8){
+                    &:nth-of-type(13){
                         width: 20%; height: 60vh;
                         padding: 0 5px;
     
@@ -1252,7 +1273,7 @@ body{
                         }
                     }
                     
-                    &:nth-of-type(9){
+                    &:nth-of-type(14){
                         width: 40%;
                         border-right: 1px solid #111;
     
@@ -1275,7 +1296,7 @@ body{
                         }
                     }
     
-                    &:nth-of-type(10){
+                    &:nth-of-type(15){
                         width: 80%;
                         border-left: 1px solid #111;
     
@@ -1421,7 +1442,7 @@ body{
                         }
                     }
     
-                    &:nth-of-type(11){
+                    &:nth-of-type(16){
                         width: 20%; height: 20vh;
                         padding: 10px;
     
@@ -1588,7 +1609,7 @@ body{
     }
 }
 
-@media screen and (max-width: 559px){
+@media screen and (max-width: 599px){
     body{
     
         #header{
@@ -1643,14 +1664,39 @@ body{
                     border-bottom: 1px solid #111;
                     border-right: 1px solid #111;
                     float: left;
-    
+
                     &:nth-of-type(2){
-                        width: 60%; height: 60vh;
+                        width: 60%; height: 20vh;
+                    }
+    
+                    &:nth-of-type(3){
+                        width: 40%; height: 10vh;
+                        border-right: none;
+                    }
+    
+                    &:nth-of-type(4){
+                        width: 40%; height: 10vh;
+                        border-right: none; 
+                    }
+    
+                    &:nth-of-type(5){
+                        width: 100%; height: 10vh;
+                        border-right: none;
+                    }
+    
+                    &:nth-of-type(6){
+                        height: 60vh;
+                        border-right: none;
+                        padding: 0px;
+                    }
+    
+                    &:nth-of-type(7){
+                        width: 80%; height: 60vh;
 
                         .inner{
                             #navi{
                                 width: 150px;
-                                top: 20px; right: auto; left: 50%;
+                                top: 15px; right: auto; left: 50%;
                                 transform: translateX(-50%);
 
                                 li{
@@ -1661,17 +1707,19 @@ body{
                             .wrap{
                                 h1{
                                     text-align: center;
+                                    margin-bottom: 40px;
                                 }
 
                                 .btn{
-                                    margin-top: 15px;
+                                    margin-top: 0px;
                                 }
                             }
                         }
                     }
     
-                    &:nth-of-type(3){
-                        width: 40%; height: 40vh;
+                    &:nth-of-type(8){
+                        width: 60%; height: 40vh;
+                        border-left: 1px solid #111;
     
                         >.inner{
                             position: relative;
@@ -1695,14 +1743,14 @@ body{
                                 }
         
                                 .pic{
-                                    width: 100%; height: 35%;
+                                    width: 100%; height: 45%;
                                     margin-bottom: 0px;
                                 }
         
                                 h2{
                                     width: 100%;
                                     padding: 10px 0;
-                                    margin-bottom: 30px;
+                                    margin-bottom: 10px;
         
                                     span{
                                         display: block;
@@ -1713,13 +1761,13 @@ body{
                                 }
         
                                 p{
-                                    margin-bottom: 40px;
-                                    padding-bottom: 10px;
+                                    margin-bottom: 30px;
+                                    padding-bottom: 5px;
                                 }
                                 
                                 .btn{
                                     position: absolute;
-                                    top: 155px; right: 0;
+                                    top: 125px; right: 0;
                                     width: 100%; height: 25px;
             
                                     &::before{
@@ -1775,8 +1823,9 @@ body{
                         }
                     }
     
-                    &:nth-of-type(4){
-    
+                    &:nth-of-type(9){
+                        height: 40vh;
+                        
                         .inner{
     
                             span{
@@ -1789,7 +1838,7 @@ body{
                         }
                     }
     
-                    &:nth-of-type(5){
+                    &:nth-of-type(10){
                         width: 100%; height: 40vh;
     
                         .inner{
@@ -1825,11 +1874,11 @@ body{
                         }
                     }
     
-                    &:nth-of-type(6){
+                    &:nth-of-type(11){
                         width: 40%;
                     }
     
-                    &:nth-of-type(7){
+                    &:nth-of-type(12){
                         width: 60%;
                         padding: 0;
     
@@ -1845,7 +1894,7 @@ body{
                         }
                     }
         
-                    &:nth-of-type(8){
+                    &:nth-of-type(13){
                         width: 40%; height: 40vh;
                         border-left: 1px solid #111;
     
@@ -1861,7 +1910,7 @@ body{
                         }
                     }
                     
-                    &:nth-of-type(9){
+                    &:nth-of-type(14){
                         width: 60%; height: 20vh;
     
                         .inner{
@@ -1879,7 +1928,7 @@ body{
                         }
                     }
     
-                    &:nth-of-type(10){
+                    &:nth-of-type(15){
                         width: 60%;
                         border-left: none;
     
@@ -1920,7 +1969,7 @@ body{
                         }
                     }
     
-                    &:nth-of-type(11){
+                    &:nth-of-type(16){
                         width: 40%; height: 20vh;
     
                         .inner{
